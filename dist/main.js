@@ -86,15 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/test-package/module.js":
-/*!*********************************************!*\
-  !*** ./node_modules/test-package/module.js ***!
-  \*********************************************/
-/*! exports provided: test */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/test-package/main.js":
+/*!*******************************************!*\
+  !*** ./node_modules/test-package/main.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"test\", function() { return test; });\nconst test = 'it worked!';\n\n\n//# sourceURL=webpack:///./node_modules/test-package/module.js?");
+eval("module.exports = {\n  test: 'it worked!',\n};\n\n\n//# sourceURL=webpack:///./node_modules/test-package/main.js?");
 
 /***/ }),
 
@@ -106,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Home; });\n/* harmony import */ var test_package__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! test-package */ \"./node_modules/test-package/module.js\");\n\nfunction Home() {\n  return /*#__PURE__*/React.createElement(\"div\", null, test_package__WEBPACK_IMPORTED_MODULE_0__[\"test\"]);\n}\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Home; });\n/* harmony import */ var test_package__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! test-package */ \"./node_modules/test-package/main.js\");\n/* harmony import */ var test_package__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(test_package__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Home() {\n  return /*#__PURE__*/React.createElement(\"div\", null, test_package__WEBPACK_IMPORTED_MODULE_0__[\"test\"]);\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
